@@ -1,0 +1,92 @@
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Placement App</title>
+        <link rel="stylesheet" href="style.css">
+        </head>
+        <body>
+
+        <!-- Header -->
+    <header>
+    <div class="logo">
+        <h1>Placement App</h1>
+    </div>
+    <nav>
+        <a href="#jobs">Job Listings</a>
+        <a href="#apply">Apply Now</a>
+        
+    </nav>
+    <div class="search-container">
+        <input type="text" id="search" placeholder="Search jobs...">
+        <button class="btn-search">Search</button>
+    </div>
+</header>
+
+
+        <!-- Job Listings Section -->
+        <section id="jobs" class="container">
+            <h2>Available Job Listings</h2>
+            <!-- Filters for job search -->
+            <div id="job-filters">
+    <label for="filter-location">Filter by Location:</label>
+    <select id="filter-location">
+        <option value="all">All Locations</option>
+        <option value="new york">New York</option>
+        <option value="san francisco">San Francisco</option>
+        <option value="remote">Remote</option>
+    </select>
+    </div>
+
+
+            <!-- Job Listings -->
+            <ul id="job-listings" class="job-listings">
+            <!-- Job Listings will be populated by JavaScript -->
+            </ul>
+        </section>
+
+        <!-- Apply Section -->
+        <section id="apply" class="container">
+            <h2>Apply for a Job</h2>
+            <form id="application-form" action="https://formspree.io/f/xwpkkvzg" method="POST">
+            <div class="input-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="input-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="input-group">
+                <label for="job-title">Job Title Applying For:</label>
+                <input type="text" id="job-title" name="job-title" required>
+            </div>
+
+            <div class="input-group">
+                <label for="coverLetter">Cover Letter:</label>
+                <textarea id="coverLetter" name="coverLetter" required></textarea>
+            </div>
+
+            <button type="submit" class="btn">Submit Application</button>
+            </form>
+            <p id="success-message" style="display: none;">Your application has been submitted successfully!</p>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+    <p>&copy; 2024 Placement App</p>
+    <nav>
+        <span>Terms & Conditions</span> | 
+        <span>Privacy Policy</span> | 
+        <span>Contact Us</span>
+    </nav>
+</footer>
+
+
+        <!-- JavaScript for dynamic content -->
+        <script src="script.js"></script>
+        </body>
+        </html>

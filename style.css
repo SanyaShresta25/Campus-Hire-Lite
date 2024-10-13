@@ -1,0 +1,207 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header styles */
+header {
+    background-color: #000; /* Black background */
+    color: #ffdd57; /* Yellow text */
+    text-align: center;
+    padding: 1.5rem 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+header nav {
+    margin: 1rem 0;
+}
+
+header nav a {
+    color: #ffdd57; /* Yellow links */
+    text-decoration: none;
+    font-weight: 500;
+    margin: 0 1.5rem;
+    transition: color 0.3s ease;
+}
+
+header nav a:hover {
+    color: white; /* White on hover */
+}
+
+/* Search bar styles */
+.search-container {
+    margin-top: 1rem;
+}
+
+.search-container input {
+    padding: 0.5rem;
+    border: 1px solid #ffdd57; /* Yellow border */
+    border-radius: 5px;
+    width: 250px;
+    margin-right: 0.5rem;
+}
+
+.search-container .btn-search {
+    background-color: #ffdd57; /* Yellow button */
+    color: black; /* Black text */
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-container .btn-search:hover {
+    background-color: #e0c300; /* Darker yellow on hover */
+}
+
+/* Main container styles */
+.container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Titles */
+h2 {
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    border-bottom: 2px solid #ffdd57;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+}
+
+/* Job listings styles */
+.job-listings {
+    list-style-type: none;
+}
+
+.job-listings li {
+    background-color: #f9f9f9;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.job-listings li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.job-listings h3 {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.job-listings p {
+    margin-bottom: 0.75rem;
+}
+
+/* Form styles */
+form {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+input, textarea {
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+input:focus, textarea:focus {
+    border-color: #ffdd57;
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 221, 87, 0.3);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.btn {
+    background-color: #000;
+    color: #ffdd57;
+    padding: 1rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ffdd57;
+    color: #000;
+}
+
+footer {
+    text-align: center;
+    background-color: #000; /* Black background */
+    color: #ffdd57; /* Yellow text */
+    padding: 2rem 0;
+    margin-top: 2rem;
+}
+
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+    header .logo {
+        font-size: 2rem;
+    }
+
+    header nav a {
+        margin: 0 1rem;
+    }
+
+    .container {
+        padding: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+#success-message {
+    display: none; /* Hidden by default */
+    background-color: #d4edda; /* Light green background */
+    color: #155724; /* Dark green text */
+    border: 1px solid #c3e6cb; /* Green border */
+    padding: 10px 15px; /* Padding around the text */
+    border-radius: 5px; /* Rounded corners */
+    margin-top: 15px; /* Space above the message */
+    font-size: 16px; /* Font size */
+    font-family: Arial, sans-serif; /* Font style */
+    text-align: center; /* Centered text */
+}
